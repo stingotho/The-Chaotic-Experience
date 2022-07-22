@@ -1,4 +1,6 @@
 <script setup>
+
+import 'animate.css';
 defineProps({
   msg: {
     type: String,
@@ -9,11 +11,13 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <h1 class="text-orange-600">{{ msg }}</h1>
+    <h1 class="text-orange-600 ">{{ msg }}</h1>
     <h3>
       Tired of eating normal food like normal people and one day I just decided to invent
-      <a class="text-orange-600" target="_blank" href="">Chaotic</a> +
-      <a class="text-orange-600" target="_blank" href="">Food</a>.
+      <span class="text-orange-600">
+        Chaotic Food
+      </span>
+      .
     </h3>
   </div>
 </template>
@@ -35,6 +39,7 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+
   .greetings h1,
   .greetings h3 {
     text-align: left;

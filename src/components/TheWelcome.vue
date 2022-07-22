@@ -10,7 +10,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 <template>
   <WelcomeItem>
     <template #icon>
-      <DocumentationIcon />
+      <DocumentationIcon class="animate-pulse" />
     </template>
     <template #heading>Who is Chaos?</template>
 
@@ -24,7 +24,7 @@ import SupportIcon from "./icons/IconSupport.vue";
     <template #icon>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
+        class="h-6 w-6 motion-safe:animate-pulse"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -47,7 +47,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 
   <WelcomeItem>
     <template #icon>
-      <img src="https://img.icons8.com/small/16/FFFFFF/kawaii-sushi.png" />
+      <img class="h-6 w-6 animate-spin" src="https://img.icons8.com/small/16/FFFFFF/kawaii-sushi.png" />
     </template>
     <template #heading
       >What was the most chaotic dish or drink created?</template
@@ -64,7 +64,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 
   <WelcomeItem>
     <template #icon>
-      <CommunityIcon />
+      <CommunityIcon class="animate-pulse" />
     </template>
     <template #heading>How to contact me?</template>
 
@@ -87,12 +87,10 @@ import SupportIcon from "./icons/IconSupport.vue";
 
   <WelcomeItem>
     <template #icon>
-      <SupportIcon />
+      <SupportIcon class="animate-pulse"/>
     </template>
     <template #heading>Support Me</template>
-
-    We are very ambitious and have so much to do and offer. The chaotic experience is not only about mixing weird food and drinks combinations we actually care about the pallete and inventing new dishes.
-    We also care about people that need help and cannot afford proper healthy food. In order for us to continue consider
-    <a class="text-orange-600" target="_blank" href="">becoming a sponsor</a>.
+    Support me 
+    <a class="text-orange-600" target="_blank" href="">here</a>.
   </WelcomeItem>
 </template>
